@@ -4,7 +4,7 @@
   "description": "Get registry info (url, auth token, headers) from an arg",
   "main": "dist/index.js",
   "scripts": {
-    "test": "babel-tape-runner test.js",
+    "test": "",
     "build": "rm -rf dist && mkdir -p dist && babel lib --out-dir dist",
     "watch": "rm -rf dist && mkdir -p dist && babel -w lib --out-dir dist",
     "prepublish": "npm run build"
@@ -22,9 +22,7 @@
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
-    "babel-preset-es2015": "6.13.2",
-    "babel-tape-runner": "^2.0.1",
-    "tapava": "^2.2.0"
+    "babel-preset-es2015": "6.13.2"
   },
   "bin": "bin/cli.js"
 }
