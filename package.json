@@ -7,7 +7,8 @@
     "test": "xo",
     "build": "rm -rf dist && mkdir -p dist && babel lib --out-dir dist",
     "watch": "rm -rf dist && mkdir -p dist && babel -w lib --out-dir dist",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "posttest": "package-json-to-readme package.json > readme.md"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,17 @@
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
     "babel-preset-es2015": "6.13.2",
+    "package-json-to-readme": "^1.5.1",
     "xo": "^0.16.0"
   },
   "bin": "bin/cli.js",
   "xo": {
     "esnext": true,
-    "space": true
+    "space": true,
+    "ignore": ["example.js"]
+  },
+  "dependencies": {
+    "registry-auth-token": "^3.0.1",
+    "registry-url": "^3.1.0"
   }
 }
