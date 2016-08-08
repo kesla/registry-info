@@ -1,6 +1,6 @@
 {
   "name": "registry-info",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get registry info (url, auth token, headers) from an arg",
   "main": "dist/index.js",
   "scripts": {
@@ -31,7 +31,9 @@
   "xo": {
     "esnext": true,
     "space": true,
-    "ignore": ["example.js"]
+    "ignore": [
+      "example.js"
+    ]
   },
   "dependencies": {
     "registry-auth-token": "^3.0.1",
